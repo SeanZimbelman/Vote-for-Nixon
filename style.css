@@ -1,0 +1,106 @@
+:root {
+    --green: #00FF00;
+    --red: #FF0000;
+    --blue: #0000FF;
+    --black: #000;
+    --white: #FFF;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: var(--red);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='460' height='460' viewBox='0 0 20 20'%3E%3Cg %3E%3Cpolygon fill='%230000ff' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%230000ff' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+p{
+    font-size: 100px;
+    text-align: center;
+    background-color: var(--white);
+}
+
+div {
+    cursor: default;
+}
+
+div#votingBox {
+    width: 80%;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+
+div.candidate {
+    height: 300px;
+    width: 300px;
+    border: 15px solid var(--black);
+    transition: all 1s;
+    background-color: var(--white);
+}
+
+div.vote0 {
+    background-color: var(--red);
+    color: var(--blue);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    height: 60px;
+    width: 120px;
+    border: 3px solid var(--blue);
+    cursor: url(exclamation.png), default;
+}
+
+div.vote1 {
+    background-color: var(--blue);
+    color: var(--red);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    height: 60px;
+    width: 120px;
+    border: 3px solid var(--red);
+    cursor: url(exclamation.png), default;
+}
+
+div.name {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 75px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.display {
+    margin: 10px auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+#worthless {
+    margin-top: 100px;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+#worthless p{
+    margin-top: 100px;
+}
+
+#nope {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+}
